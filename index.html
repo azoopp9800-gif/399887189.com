@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .profile-section {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        
+        .avatar-container {
+            flex: 0 0 200px;
+            margin-right: 30px;
+            text-align: center;
+        }
+        
+        .avatar {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #f0f0f0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-container {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            color: #6a11cb;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            margin: 25px 0 15px;
+            color: #444;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .skill-tag {
+            background: #eef4ff;
+            color: #2575fc;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .avatar-container {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .info-container {
+                text-align: center;
+            }
+            
+            .skills, .contact {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>欢迎来到我的个人主页</h1>
+            <p>探索我的专业背景与个人兴趣</p>
+        </div>
+        
+        <div class="profile-section">
+            <div class="avatar-container">
+                <img src="IMG_7281.jpeg" alt="个人头像" class="avatar" onerror="this.src='https://via.placeholder.com/200?text=头像未找到'">
+                <h2>张明</h2>
+                <p>前端开发工程师</p>
+            </div>
+            
+            <div class="info-container">
+                <h3>关于我</h3>
+                <p>我是一名热爱技术的前端开发工程师，拥有5年的Web开发经验。擅长使用现代前端技术栈构建响应式、用户友好的Web应用。我相信技术应该服务于人，创造出更好的用户体验。</p>
+                
+                <h3>专业技能</h3>
+                <div class="skills">
+                    <span class="skill-tag">HTML5/CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">UI/UX设计</span>
+                </div>
+                
+                <h3>工作经历</h3>
+                <p>曾在多家科技公司担任前端开发职位，参与过多个大型项目的设计与开发，包括电商平台、企业管理系统和移动端应用。</p>
+                
+                <h3>联系方式</h3>
+                <div class="contact">
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <span>zhangming@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📱</span>
+                        <span>138-XXXX-XXXX</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>🔗</span>
+                        <span>linkedin.com/in/zhangming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
